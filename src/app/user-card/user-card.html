@@ -1,0 +1,10 @@
+<p>Name: {{ name() }}</p>
+<p>Status: {{ status() }}</p>
+
+@if (age() >= 18) {
+<p>Adult</p>
+} @else {
+<p>Minor</p>
+}
+
+<button (click)="selectUser()">Select</button>
